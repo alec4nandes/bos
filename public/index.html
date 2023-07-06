@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Free Spells</title>
+        <style>
+            body {
+                background-color: #222;
+                color: #eee;
+            }
+
+            details details,
+            details details p {
+                margin-left: 15px;
+            }
+        </style>
+        <script type="module" defer>
+            import spells from "./data-copy1.js";
+            import formatSpells from "./format-spells.js";
+            document.body.innerHTML = formatSpells(spells);
+        </script>
+    </head>
+    <body></body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Herbology</title>
+        <style>
+            body {
+                background-color: #222;
+                color: #eee;
+            }
+
+            .sci-name,
+            details,
+            p {
+                margin-left: 15px;
+            }
+
+            .sci-name {
+                font-style: italic;
+            }
+        </style>
+        <script type="module" defer>
+            import formatHerbs from "./format-herbs.js";
+            document.body.innerHTML = formatHerbs();
+        </script>
+    </head>
+    <body></body>
+</html>
