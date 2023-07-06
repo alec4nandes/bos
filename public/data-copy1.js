@@ -30260,7 +30260,8 @@ const sections = {
             "Full moon magic works best in a seven day cycle - three prior, the night of, and three after.",
             "Black (New) Moon No magic should be performed This is a witches Sunday of rest if you will.",
             "We respect the moon cycle and the power she instills by resting on the Black Moon.",
-            "CREATE YOUR OWN MOON SPELLS",
+        ],
+        "CREATE YOUR OWN MOON SPELLS": [
             "Because of the very nature of Magick, each working should be highly individualized and personal.",
             "Even if following a traditional spell, it should be tailored to your specific needs to be most effective for you.",
             "Understanding the basics of Spell Construction will enable you to formulate your own specific,",
