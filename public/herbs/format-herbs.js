@@ -71,8 +71,8 @@ function process() {
         }
     }
     // delete redundant data:
-    herbs.Lavender = { ...herbs.Lavender, ...herbs.Lavandin };
-    delete herbs.Lavandin;
+    // herbs.Lavender = { ...herbs.Lavender, ...herbs.Lavandin };
+    // delete herbs.Lavandin;
     delete herbs["Lavender (Mont Blanc - High Alt)"];
     return herbs;
 }
