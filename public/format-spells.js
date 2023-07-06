@@ -1,4 +1,6 @@
-export default function formatSpells(sections) {
+import sections from "./data-copy1.js";
+
+export default function formatSpells() {
     return Object.entries(sections)
         .sort(sortEntries)
         .map(

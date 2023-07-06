@@ -1,4 +1,4 @@
-import spells from "../data-copy1.js";
+import sections from "../data-copy1.js";
 
 export default function formatHerbs() {
     return Object.entries(process())
@@ -41,7 +41,7 @@ export default function formatHerbs() {
 
 function process() {
     const herbs = {},
-        herbInfo = spells["Herbs Vol. 2"]["MORE HERBS"];
+        herbInfo = sections["Herbs Vol. 2"]["MORE HERBS"];
     let common_name,
         scientific_name,
         definition = "";

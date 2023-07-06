@@ -3,27 +3,26 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/css/style.css">
         <title>Herbology</title>
         <style>
-            body {
-                background-color: #222;
-                color: #eee;
-            }
-
-            .sci-name,
-            details,
-            p {
-                margin-left: 15px;
-            }
-
             .sci-name {
                 font-style: italic;
+                margin-left: 15px;
             }
         </style>
+    </head>
+    <body>
+        <header>
+            <h1>Herbology</h1>
+        </header>
+        <main></main>
+
         <script type="module" defer>
             import formatHerbs from "./format-herbs.js";
-            document.body.innerHTML = formatHerbs();
+            document
+                .querySelector("main")
+                .innerHTML = formatHerbs();
         </script>
-    </head>
-    <body></body>
+    </body>
 </html>

@@ -1,4 +1,4 @@
-const spells = {
+const sections = {
     Banishing: {
         "BANISHING OIL": [
             "-1/2 oz olive oil 7 drops pepper oil (add cayenne pepper to olive oil if you wish)",
@@ -44222,4 +44222,4 @@ const spells = {
     },
 };
 
-export default spells;
+export default sections;
