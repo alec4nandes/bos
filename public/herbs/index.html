@@ -6,6 +6,18 @@
         <link rel="stylesheet" href="/css/style.css">
         <title>Herbology</title>
         <style>
+            h2 {
+                display: inline-block;
+            }
+
+            ul {
+                padding-left: 15px;
+            }
+
+            ul ul {
+                padding-left: revert;
+            }
+
             .sci-name {
                 font-style: italic;
                 margin-left: 15px;
@@ -19,10 +31,36 @@
         <main></main>
 
         <script type="module" defer>
-            import formatHerbs from "./format-herbs.js";
+            import {formatOilsPractical, formatOilsMagickal, formatRest} from "./format.js";
+            import {names, folk, teas, oilsMagickal} from "./herbs-info.js";
             document
                 .querySelector("main")
-                .innerHTML = formatHerbs();
+                .innerHTML = `
+                    <details>
+                        <summary><h2>Practical Oils</h2></summary>
+                        ${formatOilsPractical()}
+                    </details>
+                    <hr/>
+                    <details>
+                        <summary><h2>Magickal Oils</h2></summary>
+                        ${formatOilsMagickal()}
+                    </details>
+                    <hr/>
+                    <details>
+                        <summary><h2>Teas</h2></summary>
+                        ${formatRest(teas)}
+                    </details>
+                    <hr/>
+                    <details>
+                        <summary><h2>Folk Remedies</h2></summary>
+                        ${formatRest(folk)}
+                    </details>
+                    <hr/>
+                    <details>
+                        <summary><h2>Scientific Names</h2></summary>
+                        ${formatRest(names)}
+                    </details>
+                `;
         </script>
     </body>
 </html>
